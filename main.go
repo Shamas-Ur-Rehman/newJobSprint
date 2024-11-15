@@ -41,8 +41,7 @@ func main() {
 	handler := corsHandler.Handler(http.DefaultServeMux)
 
 	// Start the server
-	log.Println("Server running on http://localhost:8080")
-	log.Fatal(http.ListenAndServe("0.0.0.0:8080", handler))
-	log.Fatal(http.ListenAndServe("0.0.0.0:8080", nil))
+	log.Println("Server running on http://localhost:8081")
+	log.Fatal(http.ListenAndServe("0.0.0.0:8081", handler))
 
 }
